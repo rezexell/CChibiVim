@@ -46,6 +46,7 @@ Note: standard Vim uses `Esc` or `Ctrl-[` for this.
 |---|---|
 | `w` | Save the file |
 | `q` | Quit the file |
+| `e {filename}` | Edit file {filename} |
 | `x` | Save and quit |
 | `q!` | Quit the file without saving |
 
