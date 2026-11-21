@@ -3,9 +3,16 @@
 A Vim-like editor for ComputerCraft (CC:Tweaked), a Minecraft mod. Tested on CraftOS. To use it, run the `cchibivim.lua` file.
 
 ## Usage
+To use it just get `cchibivim.lua` via wget and just run it
+```sh
+wget https://raw.githubusercontent.com/rezexell/CChibiVim/refs/heads/main/cchibivim.lua
+```
+
+```sh
+cchibivim {filename} (Optional)
+```
 
 Movement uses Vim-style motions, including `h`/`j`/`k`/`l` and others.
-
 To enter Normal mode, press `j` followed by `k`. Currently, this shortcut works whenever you press these keys in sequence.  
 Note: standard Vim uses `Esc` or `Ctrl-[` for this.
 
