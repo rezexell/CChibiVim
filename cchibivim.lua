@@ -201,12 +201,14 @@ local function insertEnter()
     beginInsertChange()
     local x, y = editor.cursor.x, editor.cursor.y
     local line = editor.buffer[y]
-    editor.buffer[y] = line:sub(1, x - 1)
-    table.insert(editor.buffer, y + 1, line:sub(x))
+    local indent = line:match("^[ \t]*") or ""
+    local left, right = line:sub(1, x - 1), line:sub(x)
+    editor.buffer[y] = left
+    table.insert(editor.buffer, y + 1, indent .. right)
     markBufferChanged()
     editor.cursor.y = y + 1
-    editor.cursor.x = 1
-    editor.cursor.wantCol = 1
+    editor.cursor.x = #indent + 1
+    editor.cursor.wantCol = editor.cursor.x
     editor.insertShouldStepBack = false
 end
 
