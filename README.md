@@ -9,7 +9,7 @@ wget https://raw.githubusercontent.com/rezexell/CChibiVim/refs/heads/main/cchibi
 ```
 
 ```sh
-cchibivim {filename} (Optional)
+cchibivim {filename(Optional)} 
 ```
 
 Movement uses Vim-style motions, including `h`/`j`/`k`/`l` and others.
