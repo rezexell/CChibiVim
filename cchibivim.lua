@@ -1,4 +1,4 @@
--- chibivim 1.0. CraftOS / CC:Tweaked
+-- CChibiVim 1.0. CraftOS / CC:Tweaked
 -- Normal + Insert + Visual + Command modes
 -- hybrid line numbers, jk -> Normal mode
 
